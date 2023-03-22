@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Gerador de Gados</title>
+</head>
+<body>
+    
+
+
+<!---<div class="contrainer">--->
+    <div>
+        <h1 style="text-align: center;">Gerador de Gado</h1>
+        <div class="caixa">
+            <b><p id="nomee"></p></b>
+            <p id="me">foi <b>corno</b> por</p>
+           <b><p id="frase-gerada"></p></b>
+        </div>
+      <button id="botao" onclick="gerarFrase()"><b>Gerar frase</b></button>
+    </div>
+</div>
+<p id="copy">criado por Pedro Josué</p>
+   
+
+
+   <style>
+   #copy{
+    top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  position: absolute;
+   }
+    .caixa{
+      border-radius: 1rem;
+        height: 15rem;
+        width: 19rem;
+        border: 5px solid rgb(72, 0, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .contrainer{
+        height: 50rem;
+        width: 60rem;
+        background-color: rgb(255, 255, 255);
+       margin: 150px auto 0px auto;
+        margin-top: 1rem;
+        border-radius: 2rem;
+     
+    }
+ h1{
+    font-size: 30pt;
+    margin-top: 7rem;
+ }
+
+
+   </style>
+   <script>
+    let frases = [
+    'ser trouxa',
+    'ser babaca', 
+    'ser gay',
+    'ser otário(a)',
+    'ser idiota',
+    'ser desobediente', 
+    'Não dar o cú', 
+    'não trepar' , ' não chupar gostoso' , ' enfiar no lugar errado'
+    , ' não cair na cama', ' não siriricar corretamente', 'não agradar os outros'
+    ]
+
+    function gerarFrase(){
+        let frase = frases[
+          Math.floor(Math.random() * frases.length)
+        
+        ]
+          document.querySelector('#frase-gerada').textContent=frase
+          console.log(frase);
+        
+
+
+    
+    }
+  
+</script>
+<script>
+    const nome = window.prompt('Qual é o seu nome?')
+    document.querySelector('#nomee').textContent=nome
+
+
+</script>
+</body>
+
+</html>

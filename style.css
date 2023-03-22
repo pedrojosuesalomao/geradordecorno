@@ -1,0 +1,67 @@
+
+body{
+    font-family: Arial;
+    background-color: #fffbf6;
+   width: 100%;
+   margin: 0;
+   padding: 0%;
+}
+ h1{
+  max-width: 500rem;
+  min-width: 50px;
+
+ }
+#frase-gerada{
+  font-size: 19pt;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#nomee{
+  font-size: 35pt;
+  text-align: center;
+  margin-top: 10px;
+}
+#botao{
+  height: 3rem;
+  width: 7rem;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  background-color: red;
+}
+#me{
+  font-size: 20pt;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+#chat {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    overflow-y: scroll;
+  }
+  #messages {
+    height: 90%;
+  }
+  form {
+    display: flex;
+  }
+  input[type="text"] {
+    flex: 1;
+  }
+  button[type="submit"] {
+    margin-left: 5px;
+  }
+  
