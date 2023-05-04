@@ -14,7 +14,7 @@
 
 <!---<div class="contrainer">--->
     <div>
-        <h1 style="text-align: center;">Gerador de Corno</h1>
+        <h1 style="text-align: center;">Gerador de Gado</h1>
         <div class="caixa">
             <b><p id="nomee"></p></b>
             <p id="me">foi <b>corno</b> por</p>
@@ -23,11 +23,31 @@
       <button id="botao" onclick="gerarFrase()"><b>Gerar frase</b></button>
     </div>
 </div>
-<p id="copy">criado por Pedro Josué</p>
+
+
+<div class="cobrar">
+  <p style="color: red">Se você poder nos ajudar a manter o servidor de pé, nós vamos ficar muito felizes. O mínimo para doar é UM REAL.</p>
+  <br>
+  <img style="height: 10rem;" src="qrcode.jpg" alt="00020126580014br.gov.bcb.pix013678aa7db0-6f6e-44df-a191-16b49a6e956552040000530398654041.005802BR5925Pedro Josue Henrique Salo6014Rio de Janeiro62070503***6304EF1B">
+  <br>
+ <input type="text" id="texto" value="00020126580014br.gov.bcb.pix013678aa7db0-6f6e-44df-a191-16b49a6e956552040000530398654041.005802BR5925Pedro Josue Henrique Salo6014Rio de Janeiro62070503***6304EF1B">
+ <button onclick="copiarTexto()">Copiar</button>
+
    
 
 
+
    <style>
+
+button {
+            margin-left: 10px;
+            background-color: #06224a;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+
    #copy{
     top: 90%;
   left: 50%;
@@ -63,6 +83,19 @@
 
 
    </style>
+
+<script>
+  function copiarTexto() {
+      let textoCopiado = document.getElementById("texto");
+      textoCopiado.select();
+      textoCopiado.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      alert("O texto é: " + textoCopiado.value);
+  }
+</script>
+
+
+
    <script>
     let frases = [
     'ser trouxa',
