@@ -33,6 +33,8 @@ body{
   color: rgb(0, 0, 0);
   background-color: red;
 }
+
+
 #me{
   font-size: 20pt;
   text-align: center;
@@ -63,5 +65,16 @@ body{
   }
   button[type="submit"] {
     margin-left: 5px;
+  }
+
+
+
+  .cobrar{
+       margin-top: 30rem;
+       font-size: 15pt;
+       text-align: center;
+       margin: 0px auto;
+       padding: 25rem;
+
   }
   
